@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="stylesheet.css">  
+<link href='https://fonts.googleapis.com/css?family=Oswald:400,700|Source+Sans+Pro:400,600italic|Oxygen:400,700' rel='stylesheet' type='text/css'>
+
+</head>    
+
+<body>
+    <div class="container">
+   <div class="header">
+    <h1> Creating a Website 101</h1>
+    <h2>A Guide to creating a website using HTML and CSS</h2>
+    </div>
+     <div id="nav">
+        <ul>
+        <li><a href="index.html"> Home </a></li>
+        <li><a href="Skeleton.html">Skeleton</a></li>
+        <li><a href="Layout.html">Layout</a></li>
+        <li><a href="Content.html">Content</a></li>
+        <li><a href="Styling.html">Styling with CSS</a></li>
+        <li><a href="github.html">Putting Your Site Online</a></li>
+        <li><a href="Resources.html">Resources</a></li>
+    </ul>
+    </div>
+
+  <div class="main">
+<center>  <img class="large" src="http://orig00.deviantart.net/6896/f/2012/260/c/2/creation_of_stars_by_edo555-d5f07s1.jpg"> </center>
+  
+  <h2>Designing Your Webpage with CSS</h2>
+  <p> Now that you got your tags placed around your content, you can use the tags 
+  to style your webpage.</p>
+  
+  <p> First we need to create a css file. Make sure to put the extension at the end as
+  <strong>.css</strong>.</p>
+  
+ <center> <p><img class="middle" src="Images/stylesheet.jpg"></p> </center>
+  
+  <p> Then we need to link this the css file to our html page. We do this by adding the following 
+  to the <strong>&lt;head&gt;</strong> section of our html.</p>
+  
+ <center> <p><img class ="middle" src="Images/link.jpg"></p></center>
+  
+  <p> Using CSS to style allows you to dress up your site and give it the look 
+  and feel you desire. However, for the purpose of this tutorial we are going to focus
+  on the following</p>
+  <ul>
+    <li><strong> Adding a background</li>
+    <li> Change Font and Alignment</li>
+    <li> Changing the Header and Footer</li>
+    <li> Changing the Appearance of the Navigation Bar</li>
+    <li> Change Image Size and Alignment</strong></li>
+    <li> Centering the Rest of the Page</li>
+
+  
+  </ul>
+<hr>
+ <h2>Add a background</h2>
+ <p> In order to add a background to our site, you can either use a color or add 
+ a background image. I like to add it to the <strong> body </strong> section as 
+ it will cover the whole background of the page.</p>
+ 
+ <p>In order to add color to our background, you can use the following tag </p>
+ 
+ <center><p><img class="middle" src="Images/bcolor.jpg"></p></center>
+ 
+ <p>If you want to add an image link as your background you can do the following</p>
+ 
+   <center><p><img class="middle" src="Images/bimage.jpg"></p> </center>
+  <center><p> <img class="middle" src="Images/bimage2.jpg"></p></center>
+ 
+ <p> You can also download an image, save it to your work space folder, and link the image in your stylesheet.
+ For this webpage, I downloaded the image and saved it to my Image folder. I linked it as follows</p>
+ 
+ <center> <img class="middle" src="Images/bgdimg.jpg"> </center>
+ 
+ <p> The <strong> cover</strong> used in <strong>background-image</strong> is to 
+ tell CSS to stretch the image to the full width of the webpage. Alternatively, you can also
+change the image size using the <strong>width</strong> as follows</p>
+            
+ <center><img class="middle" src="Images/width.jpg"> </center>
+
+<hr>
+
+<h2>Changing Font and Alignment</h2>
+
+<p>To give style to fonts, you can change the type of font you want in the css stylesheet. you can find the type of font you want first at <a href="http://www.w3schools.com/cssref/css_websafe_fonts.asp">www.w3schools.com </a>.
+For the purpose of my website, I want to have the same fonts for the <strong>&lt;p&gt;</strong> and <strong>&lt;li&gt;</strong> tags. The <strong>&lt;h2&gt;</strong> will
+have its own font and the <strong> &lt;h1&gt;</strong>will also have its own font. We will also add the font size and color to the document
+at the same time.</p>
+
+ <center><img class="middle" src="Images/fonthp.jpg"> </center>
+
+<p> You can also align images to the right by changing the position in the <strong>text-align:</strong>. The default alignment for the browser is left.</p>
+
+<hr>
+
+<h2> Changing the Header and Footer</h2>
+<p>The header contains the title and subtitle of our page. We want to give it a different background, change the font, give it a border, align the text in the center, and have the header align with the
+rest of the page. To do so, we entered the following code in the css stylesheet.</p>
+
+<center><img class="middle" src="Images/headerstyle.jpg"></center>
+
+<p>The background was set to a blue color. The <strong>border</strong> has the the attributes of a 2px white solid border. The text was centered and the font set to a white color. 
+The <strong> width </strong> has a calculated percentage of 25% of its parent's width on the right minus 10px from the left. As you can see, the header now lines up well with the rest of the page. </p>
+
+<p> For the footer, the style we created was the same as the header. </p>
+ <center><img class="middle" src="Images/footer.jpg"> </center>
+
+<hr>
+
+<h2> Changing the Appearance of the Navigation Bar</h2>
+<p> Previously, we had created the navigation panel as a list. In order for the navigation bar to appear as a horizontal block of links, the following code is entered
+in the css stylesheet. </p>
+
+ <center><img class="middle" src="Images/navblock.jpg"></center>
+
+<p> We first centered the text. Then the bullet points were removed by the <strong>list-style-type</strong></p> command by setting it to <strong>none</strong>. Then we displayed the list as 
+<strong>inline block</strong> elements so that it would line up horizontally. Finally, we want the links to display as a <strong> block </strong> when a person hovers over the link with their mouse.
+
+<p>To add style to the navigation bar, we added more coding as follows</p>
+
+ <center><img class="middle" src="Images/navblock2.jpg"> </center>
+
+<p> The <strong>text-deocration</strong> command was used so that the text would appear as normal black text instead of the blue links as we gave it the property <strong>none</strong>.
+Then, we wanted all the navigation to expand the whole width of the browser by setting <strong>width:100%</strong>. The background of the navigation bar was set to pink and the font to white.
+We wanted to give each link a padding around it so that it looks nicer. The padding is the space around the text. Then a border was set around it as 1px light grayish blue solid line. Finally, we turned
+the link blocks blue when you hover over the blocks.
+</p>
+
+<hr>
+
+
+<h2> Changing Image Size and Aligment</h2>
+
+<p> To change the image size, we can simply resize all images that have the <strong>img src</strong> tag using either percentage of webpage size as follows </p>
+
+ <center><img class="middle" src="Images/widthpct.jpg">  </center>
+
+<p> You can also resize using pixels as follows</p>
+
+ <center><img class="middle" src="Images/widthpx.jpg"> </center>
+
+<p>You can also directly resize images in the html file for that specific picture as follows</p>
+
+ <center><img class="middle" src="Images/imgsize.jpg">  </center>
+
+<p> If you want all the images to have various sizes, then you wouldn't want to use the above codes to apply
+to all images. Instead, you want to give each image a <strong>class</strong> in the html file.</p>  
+
+<center> <p style="background-color:white"> &lt;img class="middle" src="Images/widthpx.jpg&gt; </p> </center>
+ 
+<p> Then you can style it in the css sheet as follows </p>
+
+<center><p> <img class="middle" src="Images/imgresize.jpg"/></p></center>
+
+<p> Finally, if you want to center it on the page as I did on this website, you can add the following code</p>
+
+<center> <p style="background-color:white"> &lt;center&gt; &lt;img class="middle" src="Images/widthpx.jpg&gt; &lt;/center&gt; </p> </center>
+
+
+<hr>
+
+<h2>Centering the Rest of the Page</h2>
+<p> Currently, the page looks like this</p>
+<center><p style="background-color:white"><img class="middle" src="Images/pgalign.jpg"></p></center>
+
+<p> As you can see the text looks like its going of its margins. To fix that, we create another div as an imaginary border 
+housing all the contents in the body. Remember to close the div right above the <strong>&lt;/body&gt;</strong> tag.</p>
+
+<center><p><img class="middle" src="Images/container.jpg"></p></center>
+
+<p>Finally, in the CSS sheet, enter the following code </p>
+
+<center><p></p><img class="middle" src="Images/pgpadding.jpg"></p></center>
+
+
+<h2>Tips</h2>
+<p><strong>* Please note that you can not use the <strong>img</strong> twice in the stylesheet as it will create coding conflict. This goes for all class names as similar names can create 
+conflict in coding.* </strong></p>  
+
+<p><strong>* All styling done in the html files supercedes those done in css. *</strong></p>
+</div>
+
+<p><strong>*Extra or missing punctuation marks such as ({  ;  :) can cause the code not to work. 
+Forgetting the opening tags and closinng tags can also affect the proper display of your* </strong></p>
+
+
+<p> Now that you have tweeked your site to a desired look, let's put your website online for the pubic eye to see. <strong>Lights! Curtains! Action!</strong></p>
+
+<center><p><a href="github.html"><img class="small" src="https://pixabay.com/static/uploads/photo/2016/03/23/17/33/curtain-1275200_960_720.png"/></a></p></center>
+</div>
+
+
+<div class="footer">
+<p>  &copy JC@NYPL Chatham Square Branch</p>
+</div>
+
+  </div>
+  </body>
+  </html>
