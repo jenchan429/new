@@ -6,10 +6,11 @@ body {
 
 .header {
    
-    background-color:#0063A6;
-    border: white 2px solid;
+    background-color:beige;
+    border: #0063A6 2px solid;
     text-align:center;
-    color: white;
+    color: #0063A6;
+    border: white 2px solid;
     width:calc(25%-10px);
     
 }
@@ -21,12 +22,12 @@ body {
     color: white;
     width:calc(25%-10px);
 }
-
+/* #0063A6 is hexidecimal format for blue */
 /* #FFB6C1 is hexadecimal for pink color */
 #nav {
 text-align:center;	
 padding: 0;
-background-color:#FFB6C1;
+background-color:#0063A6;
 }
 
 
@@ -35,29 +36,32 @@ background-color:#FFB6C1;
     list-style-type:none;
 	margin: 0 auto;
 	padding: 0; 
+	text-align:center;
 }
 
 #nav li {
     display: inline-block;
+    text-align:center;
+       padding: 8px 15px;
 }
 
-/* #FFB6C1 is hexadecimal for pink color*/
+#nav a:hover {
+    color:#FFB6C1;
+}
+
 
 #nav li a:link, .nav li a:visited {
     text-decoration:none;
     width:100%;
     display: block;
-    background-color:#FFB6C1; 
     color:white;
-    padding: 8px 15px;
-	border-right: 1px solid #FFB6C1; 
-	clear: both;
+ 
 }
 
 /* #0090D2 is hexadecimal for blue color */
-#nav li a:hover, .nav li a:active {
+#nav li:hover {
     background-color:#0090D2;
-    
+    text-align:center;
 }
 
 p, li {
@@ -123,7 +127,10 @@ img.large {
 }
 
 
-
+.chart {
+    width:100%;
+    font-size:25px;
+}
 
 
 
